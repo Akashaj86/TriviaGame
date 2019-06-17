@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trivia Game</title>
-    <!--<link rel="stylesheet" href="style.css">-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body> 
-<h1><strong>Trivia Trivia!</strong></h1>
+<h1 class="mt-5"><strong>Trivia Trivia!</strong></h1>
 <h2>A Trivia Game about Trivia Games</h2>
 <!--Add timer for question
     Add alert or watev for win/loss
@@ -32,10 +32,16 @@
 <h3>Losses: </h3>
 <span id="losses"></span>
 </div>
-<input type="button" value="Reset" id="trivia-reset" />
+<input type="button" value="Reset" id="trivia-reset"/>
 <br>
 <br>
 <button id="submit">Submit Quiz</button>
+<!--this part is confusing-->
+<label>
+<input type="radio" name="question${questionNumber}" value="${letter}">
+    ${letter} :
+    ${currentQuestion.answers[letter]}
+  </label>`
 
 <!--10 questions are:-->
 

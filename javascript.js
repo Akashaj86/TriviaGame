@@ -115,10 +115,20 @@ trivia.reset();
             },
             correctAnswer: "a",    
         },    
-
-
-
         ];//last one, ends array//
+
+        function buildTrivia(){
+            const output = [];
+
+            myQuestions.forEach(
+                (currentQuestion, questionNumber) => {
+                    const answers = [];
+                    for(letter in currentQuestion.answers){
+                        answers.push(
+            
+                }
+                )
+        }
 
 
 

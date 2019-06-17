@@ -1,7 +1,9 @@
-html
+body
 {background-image: url("https://d28htnjz2elwuj.cloudfront.net/wp-content/uploads/2019/02/04140419/question-mark-blackboard-600x400-600x400.jpg");
 }
 
-.h1{
-    background-color: black;
+h1, h2, h3
+{
+    color: ghostwhite;
+    text-align: center;
 }
