@@ -1,11 +1,7 @@
 html
 {background-image: url("https://d28htnjz2elwuj.cloudfront.net/wp-content/uploads/2019/02/04140419/question-mark-blackboard-600x400-600x400.jpg");
-
 }
 
-h1,h2{
-font-family: Arial, Helvetica, sans-serif;
-font-style: italic;
-color: ghostwhite;
-text-align: center;
+.h1{
+    background-color: black;
 }
