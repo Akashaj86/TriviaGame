@@ -1,7 +1,19 @@
 //I'm thinking the website that walked me through this step by step taught me the wrong things.//
 
 //Setting countdown clock for whole game, 600 secs in 10mins//
-setTimeout(timeUp, 1000 * 600);
+var x = setInterval(function() {
+
+var now = new Date().getTime()
+
+var countDownDate = new Date("June 18 2019").getTime();
+
+
+var distance = countDownDate - now;
+
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+document.getElementById("timeOut").innerHTML = minutes + "m ";
+//setTimeout(timeUp, 1000 * 600);//
 
 //Adding reset button//
     //function reset()
@@ -187,18 +199,9 @@ setTimeout(timeUp, 1000 * 600);
                   
                     // display quiz right away
                     buildQuiz();
-                    
+
                   
                     // on submit, show results
                     submitButton.addEventListener("click", showResults);
                   })();
-
-                           
-
-
-
-
-
-
-
-      window.addEventListener("load", trivia.init)}; 
+                    
