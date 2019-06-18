@@ -11,10 +11,7 @@
 <body> 
 <h1 class="mt-5"><strong>Trivia Trivia!</strong></h1>
 <h2>A Trivia Game about Trivia Games</h2>
-<!--Add timer for question
-    Add alert or watev for win/loss
-    Remember jQ cheatsheet page
-    Check responsiveness-->
+
 <div id="trivia"></div>
 
 <div id="results"></div>
@@ -36,14 +33,19 @@
 <br>
 <br>
 <button id="submit">Submit Quiz</button>
+<br>
+<br>
+<div id="timeUp"></div>
 <!--this part is confusing-->
 <label>
-<input type="radio" name="question${questionNumber}" value="${letter}">
-    ${letter} :
-    ${currentQuestion.answers[letter]}
-  </label>`
+<input type="radio" name="question" value="${letter}">
+  </label>
+  <div class="question">
+  <div class="answers">
+  </div>
+  </div>
 
-<!--10 questions are:-->
+
 
 
 
@@ -52,7 +54,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
 </script>
-<script src="js/javascript.js">
+<script src="javascript.js">
 </script>    
 </body>
 </html>
